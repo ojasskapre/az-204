@@ -9,7 +9,7 @@ module.exports = async function (context, req) {
         files_added: c.added,
       };
     });
-    context.log(repoName);
+
     context.res = {
       body: `${repoName} => ${JSON.stringify(filesChanged)}`,
     };
